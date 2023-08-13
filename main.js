@@ -8,7 +8,7 @@ const date = require("date-and-time");
 
 const port = 3000;
 
-mongoose.connect("mongodb://localhost:27017/cardDB", {
+mongoose.connect("mongodb+srv://Captho:<password>@cluster0.wxf82f0.mongodb.net/?retryWrites=true&w=majority/cardDB", {
   useNewUrlParser: true,
 }); //create database connection
 
